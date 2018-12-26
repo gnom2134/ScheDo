@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -8,11 +11,13 @@
 
     <body>
         <header>
-            <a class="btn btn-primary" role="button" href="index">ScheDo</a>
-            <a class="btn btn-primary" role="button" href="log_in">Sign in</a>
-            <a class="btn btn-primary" role="button" href="registration">Registration</a> <br>
+            <a class="btn btn-primary" role="button" href="user_profile">My profile</a>
+            <a class="btn btn-primary" role="button" href="user_schedules">My schedules</a>
+            <a class="btn btn-primary" role="button" href="user_recommendation">My recommendations</a>
+            <a class="btn btn-primary" role="button" href="user_company">Company information</a>
+            <a class="btn btn-primary" role="button" href="index">Sign out</a>
         </header>
-        <h1>Main Window</h1>
-        <a class="btn btn-primary" role="button" href="sample">Sample</a> <br>
+        <h1>Hello, ${name}</h1>
+        <p>How are you doing?</p>
     </body>
 </html>

@@ -7,14 +7,13 @@ import org.springframework.web.servlet.DispatcherServlet;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
-import javax.servlet.jsp.jstl.core.Config;
 
 public class MainWebAppInitializer implements WebApplicationInitializer {
     public void onStartup(final ServletContext sc) throws ServletException{
         AnnotationConfigWebApplicationContext root =
                 new AnnotationConfigWebApplicationContext();
 
-        root.scan("com.baeldung");
+        root.scan("com.schedo");
         sc.addListener(new ContextLoaderListener(root));
 
         ServletRegistration.Dynamic appServlet =
